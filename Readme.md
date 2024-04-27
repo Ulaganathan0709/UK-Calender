@@ -22,7 +22,7 @@ A responsive web application that displays a list of UK bank holidays. It fetche
 
 ## Live Demo
 
-You can view a live demo of the application at: [UK Bank Holidays Live](#) // Replace # with your live URL
+You can view a live demo of the application at: [UK Bank Holidays Live](https://bankholidayuk.netlify.app/) 
 
 ## API Reference
 
