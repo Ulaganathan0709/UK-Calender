@@ -1,0 +1,109 @@
+/* Base styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h1 {
+    color: #0275d8;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+/* Table styles */
+#holidays-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#holidays-table thead {
+    background-color: #f2f2f2;
+}
+
+#holidays-table th, #holidays-table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Pagination styles */
+#pagination {
+    text-align: center;
+}
+
+.page-btn {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #0275d8;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-btn:hover {
+    background-color: #025aa5;
+}
+
+.page-btn.active {
+    background-color: #01497c;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    #app {
+        width: 95%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    #holidays-table thead {
+        display: none;
+    }
+
+    #holidays-table, #holidays-table tbody, #holidays-table tr, #holidays-table td {
+        display: block;
+        width: 100%;
+    }
+
+    #holidays-table tr {
+        margin-bottom: 15px;
+    }
+
+    #holidays-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    #holidays-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 400px) {
+    .page-btn {
+        padding: 3px 6px;
+    }
+}
